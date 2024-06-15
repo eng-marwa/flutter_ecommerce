@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/core/routes/routes.dart';
 
+import '../../features/onboarding/screens/OnboardingScreen.dart';
+
 class AppRouter {
-  Route onGenerateRoute(RouteSettings settings) {
+
+ static Route onGenerateRoute(RouteSettings settings) {
     switch (settings.name) {
       case Routes.onboarding:
         return MaterialPageRoute(builder: (_) => const OnboardingScreen());
