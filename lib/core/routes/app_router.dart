@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/core/routes/routes.dart';
+import 'package:flutter_ecommerce/features/login/screens/LoginScreen.dart';
 import 'package:flutter_ecommerce/features/onboarding/screens/OnboardingMainScreen.dart';
 
 import '../../features/onboarding/screens/OnboardingScreen.dart';
@@ -10,7 +11,8 @@ class AppRouter {
     switch (settings.name) {
       case Routes.onboarding:
         return MaterialPageRoute(builder: (_) =>  OnboardingMainScreen());
-
+      case Routes.login:
+        return MaterialPageRoute(builder: (_) => const LoginScreen());
       default:
         return unDefinedRoute();
     }

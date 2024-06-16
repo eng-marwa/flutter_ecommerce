@@ -15,8 +15,22 @@ import 'package:vector_graphics/vector_graphics.dart';
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/Hide.svg
+  SvgGenImage get hide => const SvgGenImage('assets/images/Hide.svg');
+
+  /// File path: assets/images/apple_btn.png
+  AssetGenImage get appleBtn =>
+      const AssetGenImage('assets/images/apple_btn.png');
+
   /// File path: assets/images/design.svg
   SvgGenImage get design => const SvgGenImage('assets/images/design.svg');
+
+  /// File path: assets/images/fb_btn.png
+  AssetGenImage get fbBtn => const AssetGenImage('assets/images/fb_btn.png');
+
+  /// File path: assets/images/google_btn.png
+  AssetGenImage get googleBtn =>
+      const AssetGenImage('assets/images/google_btn.png');
 
   /// File path: assets/images/logo.png
   AssetGenImage get logo => const AssetGenImage('assets/images/logo.png');
@@ -44,7 +58,11 @@ class $AssetsImagesGen {
 
   /// List of all assets
   List<dynamic> get values => [
+        hide,
+        appleBtn,
         design,
+        fbBtn,
+        googleBtn,
         logo,
         screen,
         screen1,

@@ -4,8 +4,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AppButton extends StatelessWidget {
   String title = '';
-
-  AppButton({required this.title, super.key});
+  final Function()? onClick;
+  AppButton({required this.title,this.onClick, super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,9 +19,7 @@ class AppButton extends StatelessWidget {
             tapTargetSize: MaterialTapTargetSize.padded,
             shape: MaterialStateProperty.all(RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10.0)))),
-        onPressed: () {
-          // Add your onPressed function here
-        },
+        onPressed: onClick,
         child: Text(
           '$title'.toUpperCase(),
           style: TextStyle(color: ColorName.colorWhite,fontSize: 16.sp,fontWeight: FontWeight.w600),

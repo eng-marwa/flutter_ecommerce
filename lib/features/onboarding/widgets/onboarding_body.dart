@@ -15,7 +15,11 @@ class OnboardingBody extends StatelessWidget {
     return Column(
       children: [
         Padding(
-            padding: EdgeInsets.only(left: 64.w, top: 61.h),
+            padding: model.firstPage
+                ? EdgeInsets.only(left: 64.w, top: 61.h)
+                : model.lastPage
+                    ? EdgeInsets.only(right: 64.w, top: 61.h)
+                    : EdgeInsets.only(top: 61.h),
             child: model.image),
         Padding(
           padding: EdgeInsets.only(left: 30.w, right: 30.w, top: 30.h),
