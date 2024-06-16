@@ -5,8 +5,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../core/routes/routes.dart';
 import '../../../core/themes/styles.dart';
 
-class LoginFooter extends StatelessWidget {
-  const LoginFooter({super.key});
+class RegisterFooter extends StatelessWidget {
+  const RegisterFooter({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,11 +17,12 @@ class LoginFooter extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text("Have'nt account?", style: TextStyles.font14TextColor),
+              Text("Already have an account?",
+                  style: TextStyles.font14TextColor),
               TextButton(
-                onPressed: () => context.navigateTo(Routes.register),
+                onPressed: () => context.navigateTo(Routes.login),
                 child: Text(
-                  'Create New Account',
+                  'Sign In',
                   style: TextStyles.font14TitleColorUnderline,
                 ),
               )

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ecommerce/features/login/widgets/text_with_bg.dart';
+import 'package:flutter_ecommerce/core/widgets/text_with_bg.dart';
 import 'package:flutter_ecommerce/gen/colors.gen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
