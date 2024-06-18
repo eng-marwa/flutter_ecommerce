@@ -13,8 +13,8 @@ import 'package:flutter/material.dart';
 class ColorName {
   ColorName._();
 
-  /// Color: #03DAC5
-  static const Color colorAccent = Color(0xFF03DAC5);
+  /// Color: #DDDDDD
+  static const Color colorBorder = Color(0xFFDDDDDD);
 
   /// Color: #FF4C3B
   static const Color colorPrimary = Color(0xFFFF4C3B);
