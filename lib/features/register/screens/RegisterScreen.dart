@@ -31,31 +31,33 @@ class RegisterScreen extends StatelessWidget {
             ),
             Padding(
                 padding: EdgeInsets.only(left: 15.h, right: 15.h),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Stack(
-                      children: [
-                        Positioned(
-                          child: AppHeader(),
-                        ),
-                      ],
-                    ),
-                    WelcomeAndScreenName("Sign Up",false),
-                    const RegisterForm(),
-                    SizedBox(
-                      height: 20.h,
-                    ),
-                    AuthDivider(
-                      text: 'Or sign up with',
-                    ),
-                    SizedBox(height: 20.h),
-                    const SocialLogin(),
-                    SizedBox(
-                      height: 26.h,
-                    ),
-                    const RegisterFooter()
-                  ],
+                child: SingleChildScrollView(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Stack(
+                        children: [
+                          Positioned(
+                            child: AppHeader(),
+                          ),
+                        ],
+                      ),
+                      WelcomeAndScreenName("Sign Up",false),
+                      const RegisterForm(),
+                      SizedBox(
+                        height: 20.h,
+                      ),
+                      AuthDivider(
+                        text: 'Or sign up with',
+                      ),
+                      SizedBox(height: 20.h),
+                      const SocialLogin(),
+                      SizedBox(
+                        height: 26.h,
+                      ),
+                      const RegisterFooter()
+                    ],
+                  ),
                 ))
           ],
         ),
