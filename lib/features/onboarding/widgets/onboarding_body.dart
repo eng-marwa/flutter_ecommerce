@@ -37,7 +37,7 @@ class OnboardingBody extends StatelessWidget {
                 alignment: Alignment.centerLeft,
                 child: Text(
                   model.body,
-                  style: TextStyles.font14TextColor,
+                  style: TextStyles.font14TextColorSemiBold,
                 ),
               ),
             ],

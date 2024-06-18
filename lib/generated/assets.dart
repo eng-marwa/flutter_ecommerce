@@ -15,5 +15,6 @@ class Assets {
   static const String imagesSliderDots = 'assets/images/slider_dots.svg';
   static const String imagesSliderDots1 = 'assets/images/slider_dots1.svg';
   static const String imagesSliderDots2 = 'assets/images/slider_dots2.svg';
+  static const String imagesSplash = 'assets/images/splash.png';
 
 }

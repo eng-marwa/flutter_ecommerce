@@ -56,6 +56,9 @@ class $AssetsImagesGen {
   SvgGenImage get sliderDots2 =>
       const SvgGenImage('assets/images/slider_dots2.svg');
 
+  /// File path: assets/images/splash.png
+  AssetGenImage get splash => const AssetGenImage('assets/images/splash.png');
+
   /// List of all assets
   List<dynamic> get values => [
         hide,
@@ -69,7 +72,8 @@ class $AssetsImagesGen {
         screen2,
         sliderDots,
         sliderDots1,
-        sliderDots2
+        sliderDots2,
+        splash
       ];
 }
 
