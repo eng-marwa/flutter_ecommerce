@@ -32,31 +32,33 @@ class LoginScreen extends StatelessWidget {
             ),
             Padding(
                 padding: EdgeInsets.only(left: 15.h, right: 15.h),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Stack(
-                      children: [
-                        Positioned(
-                          child: AppHeader(),
-                        ),
-                      ],
-                    ),
-                    WelcomeAndScreenName("Login Now",true),
-                    const LoginForm(),
-                    SizedBox(
-                      height: 20.h,
-                    ),
-                    AuthDivider(
-                      text: 'Or sign in with',
-                    ),
-                    SizedBox(height: 20.h),
-                    const SocialLogin(),
-                    SizedBox(
-                      height: 26.h,
-                    ),
-                    const LoginFooter()
-                  ],
+                child: SingleChildScrollView(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Stack(
+                        children: [
+                          Positioned(
+                            child: AppHeader(),
+                          ),
+                        ],
+                      ),
+                      WelcomeAndScreenName("Login Now",true),
+                      const LoginForm(),
+                      SizedBox(
+                        height: 20.h,
+                      ),
+                      AuthDivider(
+                        text: 'Or sign in with',
+                      ),
+                      SizedBox(height: 20.h),
+                      const SocialLogin(),
+                      SizedBox(
+                        height: 36.h,
+                      ),
+                      const LoginFooter()
+                    ],
+                  ),
                 ))
           ],
         ),
