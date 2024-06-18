@@ -43,7 +43,7 @@ class LoginScreen extends StatelessWidget {
                           ),
                         ],
                       ),
-                      WelcomeAndScreenName("Login Now"),
+                      WelcomeAndScreenName("Login Now",true),
                       const LoginForm(),
                       SizedBox(
                         height: 20.h,
