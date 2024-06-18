@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../core/themes/styles.dart';
+import '../themes/styles.dart';
 
 class TextWithBackground extends StatelessWidget {
   final String text;

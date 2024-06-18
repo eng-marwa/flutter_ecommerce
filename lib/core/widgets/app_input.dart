@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/gen/colors.gen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../features/login/widgets/text_with_bg.dart';
+import 'text_with_bg.dart';
 
 class AppInput extends StatelessWidget {
   bool obscureText = false;

@@ -17,12 +17,12 @@ class LoginFooter extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text("Have'nt account?", style: TextStyles.font14TextColor),
+              Text("Have'nt account?", style: TextStyles.font14TextColorSemiBold),
               TextButton(
-                onPressed: () => context.navigateTo(Routes.login),
+                onPressed: () => context.navigateTo(Routes.register),
                 child: Text(
                   'Create New Account',
-                  style: TextStyles.font14TitleColorUnderline,
+                  style: TextStyles.font14TitleColorUnderlineSemiBold,
                 ),
               )
             ],
