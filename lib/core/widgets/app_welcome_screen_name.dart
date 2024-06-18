@@ -16,9 +16,9 @@ class WelcomeAndScreenName extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Visibility(visible: welcomeMessage, child: Text('Welcome back',style: TextStyles.font25SemiBoldTitleColor,)),
+          Visibility(visible: welcomeMessage, child: Text('Welcome back',style: TextStyles.font25TitleColorSemiBold,)),
           Text(
-            screenName,style: TextStyles.font25SemiBoldTitleColor,
+            screenName,style: TextStyles.font25TitleColorSemiBold,
           )
         ],
       ),

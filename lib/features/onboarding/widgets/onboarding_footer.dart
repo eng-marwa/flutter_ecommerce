@@ -19,12 +19,12 @@ class OnboardingFooter extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text('Already have an account?',
-                  style: TextStyles.font14TextColor),
+                  style: TextStyles.font14TextColorSemiBold),
               TextButton(
                 onPressed: () => context.navigateTo(Routes.login),
                 child: Text(
                   'Sign In',
-                  style: TextStyles.font14TextColorUnderline,
+                  style: TextStyles.font14TextColorUnderlineSemiBold,
                 ),
               )
             ],

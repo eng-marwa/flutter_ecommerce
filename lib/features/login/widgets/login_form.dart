@@ -31,7 +31,7 @@ class LoginForm extends StatelessWidget {
             },
             child:  Text(
               'Forgot Password?',
-              style: TextStyles.font14SemiBoldPrimaryColorRegular
+              style: TextStyles.font14PrimaryColorRegular
             ),
           )),
       SizedBox(

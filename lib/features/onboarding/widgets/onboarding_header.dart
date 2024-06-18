@@ -20,7 +20,7 @@ class OnboardingHeader extends StatelessWidget {
           Assets.images.logo.image(width: 100.w, height: 30.h),
           Text(
             model.lastPage ? 'Done'.toUpperCase() : 'Skip'.toUpperCase(),
-            style: TextStyles.font16TitleColor500Weight,
+            style: TextStyles.font16TitleColorMedium,
           ),
         ],
       ),
