@@ -10,18 +10,23 @@ import '../../../core/widgets/app_input.dart';
 import '../../../gen/colors.gen.dart';
 
 class ForgetPasswordForm extends StatelessWidget {
-  const ForgetPasswordForm({super.key});
+  final EdgeInsetsGeometry? contentPadding;
+
+  ForgetPasswordForm({this.contentPadding, super.key});
 
   @override
   Widget build(BuildContext context) {
     return Form(
         child: Column(children: [
-          AppInput(obscureText: false,labelText: 'Phone Number',type: TextInputType.phone, isPassword: false,contentPadding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),),
-          verticalSpace(43),
-          AppButton(
-              title: 'SEND OTP',
-              onClick: () {}
-          )
-        ]));
+      AppInput(
+        obscureText: false,
+        labelText: 'Phone Number',
+        type: TextInputType.phone,
+        isPassword: false,
+        contentPadding: contentPadding,
+      ),
+      verticalSpace(43),
+      AppButton(title: 'SEND OTP', onClick: () {})
+    ]));
   }
 }

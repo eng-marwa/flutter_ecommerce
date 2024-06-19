@@ -4,8 +4,7 @@ import 'package:flutter_ecommerce/features/forget_pass/screens/ForgetPasswordScr
 import 'package:flutter_ecommerce/features/login/screens/LoginScreen.dart';
 import 'package:flutter_ecommerce/features/onboarding/screens/OnboardingMainScreen.dart';
 import 'package:flutter_ecommerce/features/register/screens/RegisterScreen.dart';
-
-import '../../features/onboarding/screens/OnboardingScreen.dart';
+import 'package:flutter_ecommerce/features/reset_pass/screens/ResetPasswordScreen.dart';
 
 class AppRouter {
   static Route onGenerateRoute(RouteSettings settings) {
@@ -18,6 +17,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const RegisterScreen());
       case Routes.forgetPassword:
         return MaterialPageRoute(builder: (_) => const ForgetPasswordScreen());
+      case Routes.resetPassword:
+        return MaterialPageRoute(builder: (_) => const ResetPasswordScreen());
       default:
         return unDefinedRoute();
     }
