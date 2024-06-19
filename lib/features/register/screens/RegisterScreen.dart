@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/core/widgets/auth_divider.dart';
 import 'package:flutter_ecommerce/features/login/widgets/login_footer.dart';
 import 'package:flutter_ecommerce/features/login/widgets/login_form.dart';
+import 'package:flutter_ecommerce/utils/extensions/Spacing.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/widgets/app_header.dart';
@@ -20,7 +21,7 @@ class RegisterScreen extends StatelessWidget {
         body: SafeArea(
       child: Padding(
         padding: EdgeInsets.only(
-          bottom: 90.0.h,
+          bottom: 100.0.h,
         ),
         child: Stack(
           children: [
@@ -43,18 +44,14 @@ class RegisterScreen extends StatelessWidget {
                         ],
                       ),
                       WelcomeAndScreenName("Sign Up",false),
-                      const RegisterForm(),
-                      SizedBox(
-                        height: 16.h,
-                      ),
+                      RegisterForm(contentPadding:EdgeInsets.symmetric(vertical: 18.h,horizontal: 20.w)),
+                      verticalSpace(20),
                       AuthDivider(
                         text: 'Or sign up with',
                       ),
-                      SizedBox(height: 16.h),
+                      verticalSpace(20),
                       const SocialLogin(),
-                      SizedBox(
-                        height: 20.h,
-                      ),
+                      verticalSpace(26),
                       const RegisterFooter()
                     ],
                   ),

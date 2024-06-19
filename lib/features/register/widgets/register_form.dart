@@ -5,42 +5,29 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../core/widgets/app_button.dart';
 import '../../../core/widgets/app_input.dart';
 import '../../../gen/colors.gen.dart';
+import '../../../utils/extensions/Spacing.dart';
 
 class RegisterForm extends StatelessWidget {
-  const RegisterForm({super.key});
+  final EdgeInsetsGeometry? contentPadding;
+   RegisterForm({this.contentPadding,super.key});
 
   @override
   Widget build(BuildContext context) {
     return Form(
         child: Column(children: [
-      AppInput(
-        obscureText: false,type: TextInputType.emailAddress,
-        labelText: 'Username or Email',
+      AppInput(isPassword: false,
+        labelText: 'Username or Email',contentPadding: contentPadding,
       ),
-      SizedBox(
-        height: 16.h,
+      verticalSpace(16),
+      AppInput(isPassword: true,
+        labelText: 'Password',contentPadding: contentPadding,
       ),
-      AppInput(
-        obscureText: false,
-        labelText: 'Phone Number',type: TextInputType.phone,
+      verticalSpace(16),
+      AppInput(isPassword: true,
+        labelText: 'Password',contentPadding: contentPadding,
       ),
-      SizedBox(
-        height: 16.h,
-      ),
-      AppInput(
-        obscureText: true,
-        labelText: 'Password',type: TextInputType.visiblePassword,
-      ),
-      SizedBox(
-        height: 16.h,
-      ),
-      AppInput(
-        obscureText: true,
-        labelText: 'Confirm Password',type: TextInputType.visiblePassword,
-      ),
-      SizedBox(
-        height: 30.h,
-      ),
+      verticalSpace(9),
+      verticalSpace(40),
       AppButton(
         title: 'SIGN IN',
         onClick: () {},

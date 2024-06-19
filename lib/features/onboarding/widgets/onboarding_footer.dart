@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/core/widgets/app_button.dart';
+import 'package:flutter_ecommerce/utils/extensions/Spacing.dart';
 import 'package:flutter_ecommerce/utils/extensions/navigation.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../core/routes/routes.dart';
@@ -14,7 +15,7 @@ class OnboardingFooter extends StatelessWidget {
       child: Column(
         children: [
           AppButton(title: 'Start Shopping'),
-          SizedBox(height: 8.h),
+          verticalSpace(8),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [

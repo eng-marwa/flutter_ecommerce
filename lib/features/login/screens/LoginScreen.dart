@@ -5,6 +5,7 @@ import 'package:flutter_ecommerce/core/widgets/auth_divider.dart';
 import 'package:flutter_ecommerce/features/login/widgets/login_footer.dart';
 import 'package:flutter_ecommerce/features/login/widgets/login_form.dart';
 import 'package:flutter_ecommerce/gen/colors.gen.dart';
+import 'package:flutter_ecommerce/utils/extensions/Spacing.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/widgets/app_header.dart';
@@ -32,31 +33,30 @@ class LoginScreen extends StatelessWidget {
             ),
             Padding(
                 padding: EdgeInsets.only(left: 15.h, right: 15.h),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Stack(
-                      children: [
-                        Positioned(
-                          child: AppHeader(),
-                        ),
-                      ],
-                    ),
-                    WelcomeAndScreenName("Login Now",true),
-                    const LoginForm(),
-                    SizedBox(
-                      height: 20.h,
-                    ),
-                    AuthDivider(
-                      text: 'Or sign in with',
-                    ),
-                    SizedBox(height: 20.h),
-                    const SocialLogin(),
-                    SizedBox(
-                      height: 26.h,
-                    ),
-                    const LoginFooter()
-                  ],
+                child: SingleChildScrollView(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Stack(
+                        children: [
+                          Positioned(
+                            child: AppHeader(),
+                          ),
+                        ],
+                      ),
+                      WelcomeAndScreenName("Login Now",true),
+                      verticalSpace(20),
+                       LoginForm(contentPadding:EdgeInsets.symmetric(vertical: 18.h,horizontal: 20.w)),
+                      verticalSpace(20),
+                      AuthDivider(
+                        text: 'Or sign in with',
+                      ),
+                      verticalSpace(20),
+                      const SocialLogin(),
+                      verticalSpace(36),
+                      const LoginFooter()
+                    ],
+                  ),
                 ))
           ],
         ),
