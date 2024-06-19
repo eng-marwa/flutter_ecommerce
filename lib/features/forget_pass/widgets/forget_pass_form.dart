@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/core/themes/styles.dart';
+import 'package:flutter_ecommerce/utils/extensions/Spacing.dart';
 import 'package:flutter_ecommerce/utils/extensions/navigation.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -16,9 +17,7 @@ class ForgetPasswordForm extends StatelessWidget {
     return Form(
         child: Column(children: [
           AppInput(obscureText: false,labelText: 'Phone Number',type: TextInputType.phone, isPassword: false,),
-          SizedBox(
-            height: 43.h,
-          ),
+          verticalSpace(43),
           AppButton(
               title: 'SEND OTP',
               onClick: () {}
