@@ -15,7 +15,7 @@ class ForgetPasswordForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return Form(
         child: Column(children: [
-          AppInput(obscureText: false,labelText: 'Phone Number',type: TextInputType.phone,),
+          AppInput(obscureText: false,labelText: 'Phone Number',type: TextInputType.phone, isPassword: false,),
           SizedBox(
             height: 43.h,
           ),
