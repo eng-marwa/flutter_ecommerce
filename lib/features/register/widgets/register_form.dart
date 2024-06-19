@@ -14,28 +14,32 @@ class RegisterForm extends StatelessWidget {
     return Form(
         child: Column(children: [
       AppInput(
-        obscureText: false,
+        obscureText: false,type: TextInputType.emailAddress,
         labelText: 'Username or Email',
       ),
       SizedBox(
         height: 16.h,
       ),
       AppInput(
-        obscureText: true,
-        labelText: 'Password',
+        obscureText: false,
+        labelText: 'Phone Number',type: TextInputType.phone,
       ),
       SizedBox(
         height: 16.h,
       ),
       AppInput(
         obscureText: true,
-        labelText: 'Password',
+        labelText: 'Password',type: TextInputType.visiblePassword,
       ),
       SizedBox(
-        height: 9.h,
+        height: 16.h,
+      ),
+      AppInput(
+        obscureText: true,
+        labelText: 'Confirm Password',type: TextInputType.visiblePassword,
       ),
       SizedBox(
-        height: 40.h,
+        height: 30.h,
       ),
       AppButton(
         title: 'SIGN IN',

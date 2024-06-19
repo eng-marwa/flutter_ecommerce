@@ -20,7 +20,7 @@ class RegisterScreen extends StatelessWidget {
         body: SafeArea(
       child: Padding(
         padding: EdgeInsets.only(
-          bottom: 100.0.h,
+          bottom: 90.0.h,
         ),
         child: Stack(
           children: [
@@ -45,15 +45,15 @@ class RegisterScreen extends StatelessWidget {
                       WelcomeAndScreenName("Sign Up",false),
                       const RegisterForm(),
                       SizedBox(
-                        height: 20.h,
+                        height: 16.h,
                       ),
                       AuthDivider(
                         text: 'Or sign up with',
                       ),
-                      SizedBox(height: 20.h),
+                      SizedBox(height: 16.h),
                       const SocialLogin(),
                       SizedBox(
-                        height: 26.h,
+                        height: 20.h,
                       ),
                       const RegisterFooter()
                     ],

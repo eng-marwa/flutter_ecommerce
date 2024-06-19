@@ -15,11 +15,11 @@ class LoginForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return Form(
         child: Column(children: [
-      AppInput(obscureText: false,labelText: 'Username or Email',),
+      AppInput(obscureText: false,labelText: 'Username or Email',type: TextInputType.emailAddress,),
       SizedBox(
         height: 16.h,
       ),
-      AppInput(obscureText: true,labelText: 'Password',),
+      AppInput(obscureText: true,labelText: 'Password',type: TextInputType.visiblePassword,),
       SizedBox(
         height: 9.h,
       ),
@@ -27,7 +27,7 @@ class LoginForm extends StatelessWidget {
           alignment: Alignment.centerRight,
           child: GestureDetector(
             onTap: () {
-              // Handle forgot password
+              context.navigateTo(Routes.forgotPassword);
             },
             child:  Text(
               'Forgot Password?',

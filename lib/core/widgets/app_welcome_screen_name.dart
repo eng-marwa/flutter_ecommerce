@@ -12,7 +12,7 @@ class WelcomeAndScreenName extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(top: 70.h, bottom: 24.h),
+      padding: EdgeInsets.only(top: 60.h, bottom: 24.h),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
