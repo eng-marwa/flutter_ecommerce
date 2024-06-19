@@ -1,10 +1,9 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/gen/colors.gen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'text_with_bg.dart';
-
+import '../../../utils/extensions/hideKeyboard.dart';
 class AppInput extends StatefulWidget {
   bool obscureText = false;
   bool isPassword = false;
@@ -38,7 +37,7 @@ class _AppInputState extends State<AppInput> {
       children: [
         Padding(
           padding: EdgeInsets.only(top: 10.0.h),
-          child: TextField(
+          child: TextField(onTapOutside: (event) => context.hideKeyboard(),
             obscureText: widget.obscureText,
             controller: widget.controller,
             enabled: widget.enabled,
