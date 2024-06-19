@@ -18,7 +18,7 @@ class AppRouter {
       case Routes.forgetPassword:
         return MaterialPageRoute(builder: (_) => const ForgetPasswordScreen());
       case Routes.resetPassword:
-        return MaterialPageRoute(builder: (_) => const ResetPasswordScreen());
+        return MaterialPageRoute(builder: (_) => const ResetPasswordScreen( ));
       default:
         return unDefinedRoute();
     }
