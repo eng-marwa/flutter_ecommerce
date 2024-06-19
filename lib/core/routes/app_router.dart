@@ -16,7 +16,7 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const LoginScreen());
       case Routes.register:
         return MaterialPageRoute(builder: (_) => const RegisterScreen());
-      case Routes.forgotPassword:
+      case Routes.forgetPassword:
         return MaterialPageRoute(builder: (_) => const ForgetPasswordScreen());
       default:
         return unDefinedRoute();

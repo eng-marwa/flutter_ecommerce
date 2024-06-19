@@ -16,7 +16,7 @@ class ForgetPasswordForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return Form(
         child: Column(children: [
-          AppInput(obscureText: false,labelText: 'Phone Number',type: TextInputType.phone, isPassword: false,),
+          AppInput(obscureText: false,labelText: 'Phone Number',type: TextInputType.phone, isPassword: false,contentPadding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),),
           verticalSpace(43),
           AppButton(
               title: 'SEND OTP',
