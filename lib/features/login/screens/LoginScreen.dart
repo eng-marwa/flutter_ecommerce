@@ -5,6 +5,7 @@ import 'package:flutter_ecommerce/core/widgets/auth_divider.dart';
 import 'package:flutter_ecommerce/features/login/widgets/login_footer.dart';
 import 'package:flutter_ecommerce/features/login/widgets/login_form.dart';
 import 'package:flutter_ecommerce/gen/colors.gen.dart';
+import 'package:flutter_ecommerce/utils/extensions/Spacing.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/widgets/app_header.dart';
@@ -44,18 +45,15 @@ class LoginScreen extends StatelessWidget {
                         ],
                       ),
                       WelcomeAndScreenName("Login Now",true),
-                      const LoginForm(),
-                      SizedBox(
-                        height: 20.h,
-                      ),
+                      verticalSpace(20),
+                       LoginForm(contentPadding:EdgeInsets.symmetric(vertical: 18.h,horizontal: 20.w)),
+                      verticalSpace(20),
                       AuthDivider(
                         text: 'Or sign in with',
                       ),
-                      SizedBox(height: 20.h),
+                      verticalSpace(20),
                       const SocialLogin(),
-                      SizedBox(
-                        height: 36.h,
-                      ),
+                      verticalSpace(36),
                       const LoginFooter()
                     ],
                   ),
