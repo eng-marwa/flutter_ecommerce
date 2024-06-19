@@ -45,11 +45,11 @@ class ResetPasswordScreen extends StatelessWidget {
                           ),
                         ],
                       ),
-                      WelcomeAndScreenName("Reset Password", false),
+                      WelcomeAndScreenName("Reset Password",  false),
                       verticalSpace(20),
                       ResetPasswordForm(
                           contentPadding: EdgeInsets.symmetric(
-                              vertical: 18.h, horizontal: 20.w)),
+                              vertical: 18.h, horizontal:  20.w)),
                       verticalSpace(20),
                       AuthDivider(
                         text: 'Or sign in with',
