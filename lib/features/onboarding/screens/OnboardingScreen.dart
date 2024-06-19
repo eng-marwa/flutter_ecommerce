@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/features/onboarding/model/Onboarding.dart';
+import 'package:flutter_ecommerce/utils/extensions/Spacing.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../gen/assets.gen.dart';
@@ -34,9 +35,9 @@ class OnboardingScreen extends StatelessWidget {
                     ],
                   ),
                   OnboardingBody(model),
-                  SizedBox(height: 20.h),
+                  verticalSpace(20),
                   model.pageIndicator!,
-                  SizedBox(height: 20.h),
+                  verticalSpace(20),
                   const OnboardingFooter()
                 ],
               ),

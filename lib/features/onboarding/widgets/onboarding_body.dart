@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/core/themes/styles.dart';
 import 'package:flutter_ecommerce/features/onboarding/model/Onboarding.dart';
+import 'package:flutter_ecommerce/utils/extensions/Spacing.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../gen/assets.gen.dart';
@@ -32,7 +33,7 @@ class OnboardingBody extends StatelessWidget {
                   fontWeight: FontWeight.w600,
                 ),
               ),
-              SizedBox(height: 10.h),
+              verticalSpace(10),
               Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
