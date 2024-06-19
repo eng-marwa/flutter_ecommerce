@@ -40,7 +40,7 @@ class _LoginFormState extends State<LoginForm> {
           alignment: Alignment.centerRight,
           child: GestureDetector(
             onTap: () {
-              // Handle forgot password
+              context.navigateTo(Routes.forgetPassword);
             },
             child: Text('Forgot Password?',
                 style: TextStyles.font14PrimaryColorRegular),
