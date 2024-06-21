@@ -10,6 +10,7 @@ class Routes {
   static const String help = '/help';
   static const String terms = '/terms';
   static const String privacy = '/privacy';
+  static const String otpVerification = '/otp-verification';
   static const String forgetPassword = '/forgot-password';
   static const String resetPassword = '/reset-password';
 }

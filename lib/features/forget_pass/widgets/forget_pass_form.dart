@@ -20,7 +20,9 @@ class ForgetPasswordForm extends StatelessWidget {
           verticalSpace(43),
           AppButton(
               title: 'SEND OTP',
-              onClick: () {}
+              onClick: () {
+                context.navigateTo(Routes.otpVerification);
+              }
           )
         ]));
   }

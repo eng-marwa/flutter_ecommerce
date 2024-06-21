@@ -5,6 +5,7 @@ class Assets {
   static const String assetsColors = 'assets/colors.xml';
   static const String imagesAppleBtn = 'assets/images/apple_btn.png';
   static const String imagesDesign = 'assets/images/design.svg';
+  static const String imagesEdit = 'assets/images/Edit.svg';
   static const String imagesFbBtn = 'assets/images/fb_btn.png';
   static const String imagesGoogleBtn = 'assets/images/google_btn.png';
   static const String imagesHide = 'assets/images/Hide.svg';

@@ -28,6 +28,11 @@ static TextStyle font14TitleColorUnderlineSemiBold = TextStyle(
       color: ColorName.colorTitle,
       fontWeight: FontWeightHelper.medium);
 
+  static TextStyle font16TextColorMedium = TextStyle(
+      fontSize: 16.sp,
+      color: ColorName.colorText,
+      fontWeight: FontWeightHelper.medium);
+
   static TextStyle font25TitleColorSemiBold= TextStyle(  fontSize: 25.sp,
       color: ColorName.colorTitle,
       fontWeight: FontWeightHelper.semiBold);

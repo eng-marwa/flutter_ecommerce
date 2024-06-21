@@ -16,6 +16,9 @@ class ColorName {
   /// Color: #DDDDDD
   static const Color colorBorder = Color(0xFFDDDDDD);
 
+  /// Color: #73EDEFF4
+  static const Color colorGrey = Color(0x73EDEFF4);
+
   /// Color: #FF4C3B
   static const Color colorPrimary = Color(0xFFFF4C3B);
 

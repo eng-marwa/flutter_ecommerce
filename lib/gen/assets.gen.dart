@@ -15,6 +15,9 @@ import 'package:vector_graphics/vector_graphics.dart';
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/Edit.svg
+  SvgGenImage get edit => const SvgGenImage('assets/images/Edit.svg');
+
   /// File path: assets/images/Hide.svg
   SvgGenImage get hide => const SvgGenImage('assets/images/Hide.svg');
 
@@ -61,6 +64,7 @@ class $AssetsImagesGen {
 
   /// List of all assets
   List<dynamic> get values => [
+        edit,
         hide,
         appleBtn,
         design,
