@@ -6,6 +6,8 @@ import 'package:flutter_ecommerce/features/onboarding/screens/OnboardingMainScre
 import 'package:flutter_ecommerce/features/register/screens/RegisterScreen.dart';
 
 import '../../features/onboarding/screens/OnboardingScreen.dart';
+import '../../features/otp/screens/OtpScreen.dart';
+import '../../features/reset_pass/screens/ResetPasswordScreen.dart';
 
 class AppRouter {
   static Route onGenerateRoute(RouteSettings settings) {
