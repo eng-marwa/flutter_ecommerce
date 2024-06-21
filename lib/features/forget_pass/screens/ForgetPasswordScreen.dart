@@ -38,7 +38,7 @@ class ForgetPasswordScreen extends StatelessWidget {
                       ],
                     ),
                     WelcomeAndScreenName("Forget Password", false),
-                    ForgetPasswordForm(contentPadding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),),
+                    const ForgetPasswordForm(contentPadding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),),
                     SizedBox(
                       height: 20.h,
                     ),
