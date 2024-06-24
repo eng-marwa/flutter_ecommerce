@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/core/routes/routes.dart';
-import 'package:flutter_ecommerce/features/forget_pass/screens/ForgetPasswordScreen.dart';
-import 'package:flutter_ecommerce/features/login/screens/LoginScreen.dart';
-import 'package:flutter_ecommerce/features/onboarding/screens/OnboardingMainScreen.dart';
-import 'package:flutter_ecommerce/features/register/screens/RegisterScreen.dart';
-import 'package:flutter_ecommerce/features/reset_pass/screens/ResetPasswordScreen.dart';
+
+import '../../features/forget_pass/screens/ForgetPasswordScreen.dart';
+import '../../features/login/ui/screens/LoginScreen.dart';
+import '../../features/onboarding/screens/OnboardingMainScreen.dart';
+import '../../features/register/screens/RegisterScreen.dart';
+import '../../features/reset_pass/screens/ResetPasswordScreen.dart';
 
 class AppRouter {
   static Route onGenerateRoute(RouteSettings settings) {
