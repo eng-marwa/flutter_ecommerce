@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ecommerce/core/widgets/app_button.dart';
 import 'package:flutter_ecommerce/utils/extensions/navigation.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../core/routes/routes.dart';
-import '../../../core/themes/styles.dart';
+import '../../../../core/routes/routes.dart';
+import '../../../../core/themes/styles.dart';
+
 
 class LoginFooter extends StatelessWidget {
   const LoginFooter({super.key});
