@@ -4,8 +4,8 @@ import 'package:flutter_ecommerce/core/routes/routes.dart';
 import '../../features/forget_pass/screens/ForgetPasswordScreen.dart';
 import '../../features/login/ui/screens/LoginScreen.dart';
 import '../../features/onboarding/screens/OnboardingMainScreen.dart';
-import '../../features/otp/screens/OtpScreen.dart';
 import '../../features/register/screens/RegisterScreen.dart';
+import '../../features/otp/screens/OtpScreen.dart';
 import '../../features/reset_pass/screens/ResetPasswordScreen.dart';
 
 
